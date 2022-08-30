@@ -5,10 +5,17 @@ const Product = (props) => {
   return (
     <div className="product">
       <img src={img} alt={name} />
-      <p className="product-name">{name}</p>
-      <h6>Price:{price}</h6>
-      <p>Manufacturer:{seller}</p>
-      <h6>Rating:{ratings} star</h6>
+      <div className="product-info">
+        <p className="product-name">{name}</p>
+        <p>$Price:{price}</p>
+        <p>Manufacturer:{seller}</p>
+        <p>
+          <small>Rating:{ratings} star</small>
+        </p>
+      </div>
+      <button className="btn-cart">
+        <p>Add to cart</p>
+      </button>
     </div>
   );
 };
