@@ -19,7 +19,6 @@ const Shop = () => {
       if (addedProduct) {
         const quantity = storedCart[id];
         addedProduct.quantity = quantity;
-        console.log(addedProduct);
         savedCart.push(addedProduct);
       }
     }
